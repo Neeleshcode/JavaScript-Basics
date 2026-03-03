@@ -69,6 +69,19 @@ let gameCounter = 100
 ++gameCounter;
 console.log(gameCounter);
 
+//prefix 
+let x = 2
+const y = x++
+
+console.log(x , y)
+
+// postfix
+let a = 3
+const b = ++a
+
+console.log(a , b)
+
+
 
 // mdn docs js --> https://developer.mozilla.org/en-US/docs/Web/JavaScript
 // link --> https://tc39.es/ecma262/2023/multipage/
