@@ -36,3 +36,39 @@ const myFunction = function() {  // --> it returns function when we check the ty
 console.log(typeof myFunction);
 
 // link --> https://tc39.es/ecma262/2023/multipage/abstract-operations.html#sec-type-conversion
+
+// +++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) and Heap(Reference)
+
+// Primitive data types are stored in stack and reference data types are stored in heap. Stack is faster than heap because it is a simple data structure and it is used for storing primitive data types which are small in size. Heap is used for storing reference data types which are large in size and it is slower than stack because it is a complex data structure and it is used for storing reference data types which are large in size.
+
+// When we assign a primitive data type to a variable, it creates a copy of the value and stores it in the stack.
+//  When we assign a reference data type to a variable, it creates a reference to the value and stores it in the heap.
+//  When we change the value of a primitive data type, it does not affect the original value because it is stored in the stack.
+//  When we change the value of a reference data type, it affects the original value because it is stored in the heap.
+
+let myYoutubeName = "Neelesh YT"
+
+let anotherYoutubeName = myYoutubeName
+
+//console.log(myYoutubeName);
+//console.log(anotherYoutubeName);
+
+myYoutubeName = "Neelesh YT channel"
+
+console.log(myYoutubeName);
+console.log(anotherYoutubeName);
+
+let userOne = {
+    email: "yadavneelesh669@gmail.com",
+    upi: "neelesh@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "neelesh@googgle.com"
+
+console.log(userOne);
+console.log(userTwo);
+
